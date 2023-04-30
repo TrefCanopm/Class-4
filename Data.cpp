@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Data.h"
+#include "Triad.h"
 using namespace std;
 
 Data::Data()

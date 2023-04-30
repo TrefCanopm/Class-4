@@ -15,54 +15,59 @@ int main()
 	int n, x, y, z;
 	while (f)
 	{
-		cout << "Изменение объекта Triad" << endl;
-		cout << "1) Изменить поле first" << endl;
-		cout << "2) Изменить поле second" << endl;
-		cout << "3) Изменить поле third" << endl;
-		cout << "4) Изменить все три поля" << endl;
-		cout << "5) Не чего не изменять" << endl;
-		cout << "" << endl;
+		cout << "Changing the Triad object" << endl;
+		cout << "1) Change the field first" << endl;
+		cout << "2) Change the second field" << endl;
+		cout << "3) Change the third field " << endl;
+		cout << "4) Change all three fields" << endl;
+		cout << "5) Don't change anything" << endl;
+		cout << "Select action" << endl;
 		cin >> n;
 		switch (n)
 		{
 		case 1:
 		{
-			cout << "Введите число на которое нелобходимо заминить данные выбраном поле" << endl;
+			cout << "Enter the number to replace the data in the selected field with" << endl;
 			cin >> x;
 			t.setFirst(x);
+			break;
 		}
 		case 2:
 		{
-			cout << "Введите число на которое нелобходимо заминить данные выбраном поле" << endl;
+			cout << "Enter the number to replace the data in the selected field with" << endl;
 			cin >> x;
 			t.setSecond(x);
+			break;
 		}
 		case 3:
 		{
-			cout << "Введите число на которое нелобходимо заминить данные выбраном поле" << endl;
+			cout << "Enter the number to replace the data in the selected field with" << endl;
 			cin >> x;
 			t.setThird(x);
+			break;
 		}
 		case 4:
 		{
-			cout << "Введите число на которое нелобходимо заминить данные в поле first" << endl;
+			cout << "Enter the number to replace the data with in the field first" << endl;
 			cin >> x;
-			cout << "Введите число на которое нелобходимо заминить данные в поле second" << endl;
+			cout << "Enter the number to replace the data with in the field second" << endl;
 			cin >> y;
-			cout << "Введите число на которое нелобходимо заминить данные в поле third" << endl;
+			cout << "Enter the number to replace the data with in the field third" << endl;
 			cin >> z;
 			t.setTriad(x, y, z);
+			break;
 		}
 		case 5:
 		{
 			f = 0;
+			break;
 		}
 		}
 	}
 	t.print();
 	d.plus();
 	d.print();
-	cout << "Сколько дней необходимо прибавить" << endl;
+	cout << "How many days do I need to add" << endl;
 	cin >> x;
 	d.plusD(x);
 	d.print();
